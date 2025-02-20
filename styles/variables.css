@@ -2,3 +2,23 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --accent-color: #FF0070;
+  --header-font-weight: 400;
+  --header-font-size: 18px;
+  --header-line-height: 25px;
+  --header-title-color: #DB00FF;
+  --header-title-weight: 700;
+  --header-title-size: 116px;
+  --header-title-height: 95.7px;
+  --decor-text-color:#000028;
+  --header-p-weight: 700;
+  --header-p-size: 18px;
+  --header-p-height: 23.4px;
+  --page-background-url:  url(../images/cover-image-dark.png);
+  --section-font-weight: 700;
+  --section-font-size: 18px;
+  --section-line-height: 23.4px;
+  --section-text-color: #F1B2CE;
+}

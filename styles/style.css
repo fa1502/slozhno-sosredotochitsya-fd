@@ -2,4 +2,204 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: IBM Plex Mono;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  background-image: var(--page-background-url);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  position: relative;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header__rec {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-weight: var(--header-font-weight);
+  font-size: var(--header-font-size);
+  line-height: var(--header-line-height);
+  position: absolute;
+  top: 10px;
+  right: 19px;
+}
+
+.header__rec::after {
+  content: "";
+  block-size: 9px;
+  inline-size: 9px;
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 0 0 2px 3px var(--accent-color);
+}
+
+
+
+.decorated-zone::after,
+.decorated-zone::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+ .decorated-zone::before {
+    right: 10px;
+    top: 10px;
+    border-top: 1px var(--accent-color) solid;
+    border-right: 1px var(--accent-color) solid;
+}
+
+ .decorated-zone::after {
+    left: 10px;
+    bottom: 10px;
+    border-bottom: 1px var(--accent-color) solid;
+    border-left: 1px var(--accent-color) solid;
+}
+
+.header__theme-menu {
+  color: var(--accent-color);
+  font-weight: var(--header-font-weight);
+  font-size: var(--header-font-size);
+  line-height: var(--header-line-height);
+  margin-top: 75px;
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  inline-size: 70px;
+  block-size: 26px;
+}
+
+.header__theme-menu-button  {
+  font-weight: var(--header-font-weight);
+  font-size: var(--header-font-size);
+  line-height: var(--header-line-height);
+  text-transform: lowercase;
+  background-color: transparent;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px var(--accent-color) solid;
+}
+
+.header__title {
+  color: var(--header-title-color);
+  font-weight: var(--header-title-weight);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: var(--header-title-height);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  margin-block-start: 65px;
+}
+
+.header__p {
+  font-weight: var(--header-p-weight);
+  font-size: var(--header-p-size);
+  line-height: var(--header-p-height);
+  margin-block-start: 55px;
+  margin-block-end: 66px;
+}
+
+.title-decor {
+  color: var(--decor-text-color);
+  background-color: var(--accent-color);
+}
+
+/*----------------------------------*/
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  padding: 0 10px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  font-weight: var(--section-font-weight);
+  font-size: var(--section-font-size);
+  line-height: var(--section-font-height);
+}
+
+.section_title {
+
+}
+
+.section h2 {
+  color: var(--accent-color);
+  font-weight: var(--section-font-weight);
+  font-size: var(--section-font-size);
+  line-height: var(--section-font-height);
+}
+
+.section h3 {
+  font-weight: var(--section-font-weight);
+  font-size: var(--section-font-size);
+  line-height: var(--section-font-height);
+}
+
+.section h4 {
+  
+}
+
+.section_text {
+  color: var(--section-text-color);
+}
+
+.text__link {
+  text-decoration: none;
+  text-shadow:  0.1em 0.1em 0 var(--accent-color);
+}
+
+.text__link:hover {
+  text-decoration: underline;
+  text-shadow: 0.1em 0.1em 0 var(--accent-color);
+}
+
+.text__link:focus {
+  border: 1px var(--section-text-color) solid;
+  text-decoration: none;
+  text-shadow: 0.1em 0.1em 0 var(--accent-color);
+}
+
+
+.main__img {
+  object-fit: contain;
+  width: calc(100vw - 20px);
+}
+
+/*----------------------------------*/
+
+.footer {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 286px 0;
+}
+
+.footer__title {
+  color: var(--header-title-color);
+  font-weight: var(--header-title-weight);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: var(--header-title-height);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
