@@ -16,8 +16,18 @@
   --page-background-url:  url(../images/cover-image-light.png);
   --section-text-color: #353430;
   --background-color-page: #FFF1F7;
+  --menu-color: #353430;
+  --menu-color-hover: rgba(50, 49, 45, 0.4);
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  .header__rec {
+  display: none;
+  }
+
+  .footer__title {
+    text-shadow: 4px 4px 0 #FF0070;
+  }
 }
+
+
