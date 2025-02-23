@@ -79,7 +79,7 @@
 
 
 
-.header__theme-menu-button  {
+.header__theme-menu-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +95,7 @@
   border: 1px var(--menu-color-hover) solid;
 }
 
-.header__theme-menu-button:focus{
+.header__theme-menu-button:focus {
   border-bottom: 1px var(--menu-color) solid;
   outline: none;
 }
@@ -147,14 +147,14 @@
   gap: 10px;
 }
 
-.section h2, h3{
+.section h2, h3 {
   color:  var(--menu-color);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size);
   line-height: var(--line-height);
 }
 
-.section h4{
+.section h4 {
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size);
   line-height: var(--line-height);
@@ -265,7 +265,7 @@
     grid-column: 2;
   }
 
-  .even_section{
+  .even_section {
     .article {
       grid-column: 1 / span 2;
     }
@@ -282,7 +282,7 @@
   .img_sunset {
     grid-column: 1 / span 2;
   }
-  .img_ice-cream{
+  .img_ice-cream {
     grid-column: 3 ;
     grid-row: 2 / span 2;
   }
@@ -322,21 +322,19 @@
     margin-block-end: 134px;
   }
 
-
-.section{
+.section {
   column-gap: 10px;
 }
 .article {
   grid-column: 2 ;
 }
 
-.even_section{
+.even_section {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   .article {
     grid-row: 2;
     grid-column: span 1;
-
     grid-template-rows: max-content;
   }
 }
