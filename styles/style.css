@@ -1,5 +1,34 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
+@media (prefers-color-scheme: light) {
+  :root.theme-light {
+    --accent-color: #FF8DCB;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --font-size: 18px;
+    --line-height: 23.4px;
+    --header-title-color: #FFC2E6;
+    --header-title-height: 95.7px;
+    --decor-text-color:#353430;
+    --page-background-url:  url(../images/cover-image-light.png);
+    --section-text-color: #353430;
+    --background-color-page: #FFF1F7;
+    --menu-color: #353430;
+    --menu-color-hover: rgba(50, 49, 45, 0.4);
+  }
+  
+  .theme-light .page {
+    .header__rec {
+    display: none;
+    }
+  
+    .footer__title {
+      text-shadow: 4px 4px 0 #FF0070;
+    }
+  }
+}
+
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   font-family: IBM Plex Mono;
@@ -7,9 +36,11 @@
   grid-template-columns: 1fr;
   gap: 40px;
   background-color: var(--background-color-page);
+  background-attachment: fixed;
 }
 
 .header {
+  inline-size: 100$;
   position: relative;
   padding: 10px;
   display: grid;
@@ -21,6 +52,8 @@
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size);
   line-height: var(--line-height);
+  height: 100vh;
+  min-height: auto;
 }
 
 .header__rec {
@@ -349,3 +382,4 @@
 }
 
 }
+

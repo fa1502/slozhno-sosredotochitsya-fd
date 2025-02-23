@@ -31,3 +31,30 @@
 }
 
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #FF8DCB;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --font-size: 18px;
+    --line-height: 23.4px;
+    --header-title-color: #FFC2E6;
+    --header-title-height: 95.7px;
+    --decor-text-color:#353430;
+    --page-background-url:  url(../images/cover-image-light.png);
+    --section-text-color: #353430;
+    --background-color-page: #FFF1F7;
+    --menu-color: #353430;
+    --menu-color-hover: rgba(50, 49, 45, 0.4);
+  }
+  
+   .page {
+    .header__rec {
+    display: none;
+    }
+  
+    .footer__title {
+      text-shadow: 4px 4px 0 #FF0070;
+    }
+  }
+}
