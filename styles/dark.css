@@ -33,7 +33,7 @@
 
 
 @media (prefers-color-scheme: light) {
-  :root{
+  :root {
     --accent-color: #FF0070;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
