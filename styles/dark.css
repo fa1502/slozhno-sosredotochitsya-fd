@@ -7,12 +7,7 @@
 
 :root.theme-dark {
   --accent-color: #FF0070;
-  --font-weight-bold: 700;
-  --font-weight-normal: 400;
-  --font-size: 18px;
-  --line-height: 23.4px;
   --header-title-color: #DB00FF;
-  --header-title-height: 95.7px;
   --decor-text-color:#000028;
   --page-background-url:  url(../images/cover-image-dark.png);
   --section-text-color: #F1B2CE;
@@ -28,34 +23,5 @@
 
   .footer__title {
     text-shadow: 4px 4px 0 var(--accent-color);
-  }
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --accent-color: #FF0070;
-    --font-weight-bold: 700;
-    --font-weight-normal: 400;
-    --font-size: 18px;
-    --line-height: 23.4px;
-    --header-title-color: #DB00FF;
-    --header-title-height: 95.7px;
-    --decor-text-color:#000028;
-    --page-background-url:  url(../images/cover-image-dark.png);
-    --section-text-color: #F1B2CE;
-    --background-color-page: #000028;
-    --menu-color: #FF0070;
-    --menu-color-hover: rgba(255, 0, 112, 0.4);
-  }
-  
-  .page {
-    .header__rec {
-    display: block ;
-    }
-  
-    .footer__title {
-      text-shadow: 4px 4px 0 var(--accent-color);
-    }
   }
 }
