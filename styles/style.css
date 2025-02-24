@@ -175,12 +175,13 @@ h3 {
 }
 
 .text__link:hover {
-  border-bottom: 1px var(--accent-color) solid;
+  border-bottom: 1px var(--section-text-color) solid;
 }
 
 .text__link:focus {
   border: 1px var(--section-text-color) solid;
   text-decoration: none;
+  outline: none;
 }
 
 .wrapper {
@@ -215,13 +216,11 @@ h3 {
 }
 
 .footer__title {
-  height: 100vh;
-  min-height: 668px;
   color: var(--header-title-color);
   font-weight: var(--font-weight-bold);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: var(--header-title-height);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--footer-shadow);
 }
 
 /*----------------------------------*/
@@ -262,7 +261,6 @@ h3 {
 
   .section {
     grid-template-columns: 1fr 2fr;
-
   }
 
   .modifier_section {

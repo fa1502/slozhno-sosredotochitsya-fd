@@ -20,10 +20,6 @@
   .header__rec {
   display: none;
   }
-
-  .footer__title {
-    text-shadow: 4px 4px 0 var(--footer-shadow);
-  }
 }
 
 
@@ -37,15 +33,12 @@
     --background-color-page: #FFF1F7;
     --menu-color: #353430;
     --menu-color-hover: rgba(50, 49, 45, 0.4);
+    --footer-shadow: #FF0070;
   }
   
    .page {
     .header__rec {
     display: none;
-    }
-  
-    .footer__title {
-      text-shadow: 4px 4px 0  var(--footer-shadow);
     }
   }
 }
